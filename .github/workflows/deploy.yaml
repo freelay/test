@@ -15,7 +15,7 @@ jobs:
               echo "myname is chris" >> chris.txt 
 
          - name: install maven and java
-           uses: actions/setup-javav@
+           uses: actions/setup-java@
            with:
             distribution: temurin
 
