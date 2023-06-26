@@ -13,3 +13,9 @@ jobs:
            run: |
               echo "learning github actions"
               echo "myname is chris" >> chris.txt
+           
+         - name: install java and maven 
+           uses: actions/setup-java@v3
+           with: 
+              distribution: temurin
+              java-version: '11'
