@@ -1,0 +1,25 @@
+name: deploy 
+on: [workflow_dispatch,push]
+ 
+jobs: 
+
+    firstjob: 
+        runs-on: ubuntu-latest
+        steps:
+         - name: createfile
+           run: touch chris.txt
+
+         - name: multiple shell commands
+           run: |
+              echo "learning github actions"
+              echo "myname is chris" >> chris.txt 
+
+         - name: install maven and java
+           uses: actions/setup-javav@
+           with:
+            distribution: temurin
+
+
+         
+
+
